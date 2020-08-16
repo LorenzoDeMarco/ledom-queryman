@@ -1,0 +1,27 @@
+{
+  "name": "ledom-queryman",
+  "version": "1.0.1",
+  "description": "A lightweight and versatile tool to run JSON queries against arbitrary data.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-docs": "typedoc --out docs src"
+  },
+  "keywords": [
+    "rest",
+    "restful",
+    "api",
+    "webapi",
+    "json"
+  ],
+  "author": "Lorenzo De Marco, Ledom Software",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.18.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.159",
+    "lodash": "^4.17.20"
+  }
+}
