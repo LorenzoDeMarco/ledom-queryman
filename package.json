@@ -2,9 +2,10 @@
   "name": "ledom-queryman",
   "version": "1.0.1",
   "description": "A lightweight and versatile tool to run JSON queries against arbitrary data.",
-  "main": "index.ts",
+  "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && tsc -m es6 --outDir lib-esm && webpack",
     "build-docs": "typedoc --out docs src"
   },
   "keywords": [
@@ -15,13 +16,20 @@
     "json"
   ],
   "author": "Lorenzo De Marco, Ledom Software",
+  "repository": "https://github.com/LorenzoDeMarco/ledom-queryman",
+  "files": [
+    "dist"
+  ],
   "license": "ISC",
   "devDependencies": {
+    "ts-loader": "^8.0.2",
     "typedoc": "^0.18.0",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1"
   },
   "dependencies": {
     "@types/lodash": "^4.14.159",
+    "@types/node": "^14.0.27",
     "lodash": "^4.17.20"
   }
 }
